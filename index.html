@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  gap: 30px 30px;
+}
+
+.item{
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+  text-align: left;
+  border: 1px solid black;
+}
+h3 {
+     text-align: right;
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) and (max-width: 991px) {
+.container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    flex-direction: row;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Our Menu</h1>
+
+<div class="container">
+  <div class="item" ><h3>Chicken</h3>Chicken food is one of the favorite food of non-veg eaters. There are many ways to make chicken tasty, due to which its taste increases even more. If there are advantages to eating chicken, then it also has some disadvantages.</div>
+  <div class="item" ><h3>Beef</h3> Beef is the culinary name for meat from cattle.In prehistoric times, humans hunted aurochs and later domesticated them. Since that time, numerous breeds of cattle have been bred specifically for the quality or quantity of their meat.</div>
+  <div class="item" ><h3>Sushi</h3> Sushi is made with specially prepared rice, called sumeshi. The rice is mixed with vinegar, salt, and sugar. Sushi is known for having raw or cooked seafood in it, but it sometimes has non-fish foods such as vegetables. Some sushi is wrapped in a sheet of seaweed called nori. </div>
+</body>
+</html> 
