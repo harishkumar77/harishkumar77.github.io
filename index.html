@@ -241,6 +241,7 @@
       position: relative;
       z-index: 1;
       padding: 100px 60px;
+      max-width: 100%;
     }
 
     .section-label {
@@ -279,13 +280,13 @@
       grid-template-columns: 1fr 340px;
       gap: 80px;
       align-items: center;
+      width: 100%;
     }
 
     .about-text p {
       font-size: 17px;
       color: var(--muted);
       line-height: 1.9;
-      max-width: 580px;
     }
 
     .about-text p span { color: var(--text); }
@@ -316,7 +317,7 @@
 
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+      grid-template-columns: repeat(7, 1fr);
       gap: 16px;
     }
 
@@ -357,8 +358,13 @@
     /* ── Cards Grid (Education, Experience, Projects) ── */
     .cards-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 24px;
+    }
+
+    /* Experience only has 2 cards — make them wider */
+    #experience .cards-grid {
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .card {
