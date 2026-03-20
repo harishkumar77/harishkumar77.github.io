@@ -475,6 +475,11 @@
       transform: translateY(0);
     }
 
+    @media (max-width: 1100px) {
+      .cards-grid { grid-template-columns: repeat(2, 1fr) !important; }
+      .skills-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+
     @media (max-width: 900px) {
       .navbar { padding: 16px 24px; }
       section { padding: 80px 24px; }
@@ -482,6 +487,8 @@
       .about-grid { grid-template-columns: 1fr; }
       .profile-wrap { max-width: 280px; margin: 0 auto; }
       .divider { margin: 0 24px; }
+      .cards-grid { grid-template-columns: 1fr !important; }
+      .skills-grid { grid-template-columns: repeat(3, 1fr); }
     }
   </style>
 </head>
@@ -515,8 +522,7 @@
         <div class="line2">Harish Kumar<br>Kaliyappan</div>
       </h1>
       <p class="hero-sub">
-        <span>Autonomous Robotics Engineer</span> building intelligent systems at the intersection of
-        AI inference, physical control, and real-time robotics.
+        <span>Founding ML Engineer at ParetoLabs</span> · building full-stack ML systems for real-time robotics. Published researcher &amp; patent holder in autonomous robotic systems.
       </p>
       <div class="hero-buttons">
         <a href="https://www.linkedin.com/in/harish-kumar-kaliyappan/" class="btn btn-primary" target="_blank">LinkedIn</a>
@@ -534,11 +540,11 @@
     <div class="about-grid reveal">
       <div class="about-text">
         <p>
-          Welcome to my portfolio! I'm a <span>professional Autonomous Robotics Engineer</span> passionate about building systems where AI meets the physical world. Currently pursuing a <span>Master's in Autonomous Systems and Robotics</span> at the Illinois Institute of Technology, Chicago.
+          I'm a <span>Founding Machine Learning Engineer at ParetoLabs</span>, building full-stack ML systems for real-time robotics from the ground up. Experienced in neural inference, ROS2, sensor fusion, computer vision, and multimodal human-robot interaction.
         </p>
         <br>
         <p>
-          My work spans <span>collaborative robotics, computer vision, physical AI, and real-time control systems</span>. I've published research in the Journal of Robotic Surgery and worked with industry leaders like IBM and ParetoLabs. Explore below to learn more about my journey.
+          I design and deploy end-to-end deep learning pipelines using <span>PyTorch, TensorFlow, and physics-based simulators</span> (Gazebo, PyBullet, Isaac Sim). Currently pursuing a Master's in Autonomous Systems and Robotics at <span>Illinois Institute of Technology, Chicago</span>. Published researcher and <span>patent holder</span> in autonomous robotic systems.
         </p>
       </div>
       <div class="profile-wrap">
